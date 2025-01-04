@@ -1,13 +1,14 @@
 from enum import Enum
 
 class TextType(Enum):
-    normal= "normal"
-    bold= "bold"
-    italic= "italic"
-    code= "code"
-    link= "link"
-    image= "image"
+    NORMAL= "normal"
+    BOLD= "bold"
+    ITALIC= "italic"
+    CODE= "code"
+    LINK= "link"
+    IMAGE= "image"
 
+# Intermediate from markdown, and will turn into htmlnode
 class TextNode():
     def __init__(self, text, text_type, url= None):
         self.text= text 

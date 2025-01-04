@@ -1,3 +1,3 @@
-from textnode import TextNode
+from textnode import TextNode, TextType
 
-print(TextNode("My tnode","bold", "http://johnsonboy.com"))
+print(TextNode("My tnode",TextType.BOLD, "http://johnsonboy.com"))
