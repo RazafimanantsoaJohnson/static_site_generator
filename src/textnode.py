@@ -7,6 +7,7 @@ class TextType(Enum):
     CODE= "code"
     LINK= "link"
     IMAGE= "image"
+    TEXT= "text"
 
 # Intermediate from markdown, and will turn into htmlnode
 class TextNode():

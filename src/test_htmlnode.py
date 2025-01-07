@@ -58,7 +58,6 @@ class TestHTMLNode(unittest.TestCase):
                 ],
             )
         expected_result= f"<p><p color=\"purple\" bg=\"darkgrey\"><b>Bold text</b></p>Normal text<i>italic text</i><p color=\"purple\" bg=\"cyan\"><h2>some h2 text</h2><b>Bold text</b></p>Normal text</p>"
-        print(expected_result)
         self.assertEqual(node.to_html(),expected_result)
     
     def test_to_html_with_children(self):
